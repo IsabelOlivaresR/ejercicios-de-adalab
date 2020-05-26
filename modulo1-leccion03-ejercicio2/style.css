@@ -1,0 +1,25 @@
+.div1 {
+  height: 100px;
+  width: 100px;
+  display: block;
+  border-style: solid;
+  color: green;
+}
+.div2 {
+  height: 100px;
+  width: 100px;
+  display: none;
+  border-style: solid;
+  border-color: black;
+}
+.div3 {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  border: 4px red solid;
+}
+
+.img {
+  height: 20px;
+  width: px;
+}

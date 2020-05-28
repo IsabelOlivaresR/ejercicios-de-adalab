@@ -1,7 +1,81 @@
-.header,
 .footer {
   border: 1px solid red;
 }
+.header {
+  border: 1px solid red;
+}
 .main {
-  border: 1px solid black;
+  border: 1px solid red;
+}
+
+* {
+  box-sizing: border-box;
+  color: inherit;
+  list-style-type: none;
+  text-decoration: none;
+}
+@font-face {
+  font-family: Circular;
+  src: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff2")
+      format("woff2"),
+    url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff2")
+      format("woff2"),
+    url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff")
+      format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+:root {
+  --primary-font: Circular, Arial, Helvetica, sans-serif;
+  --primary-color: black;
+  --secondary-color: #4bb84a;
+  --light-color: white;
+}
+html {
+  font-family: var(--primary-font);
+  font-size: 16px;
+}
+.menu {
+  padding: 16px;
+}
+/**HEADER**/
+
+.header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.header-logo {
+  display: inline-block;
+  width: 200px;
+}
+.header-logo img {
+  width: 100%;
+}
+
+.header-menu {
+  padding: 0px;
+  color: var(--light-color);
+}
+.header-menu li {
+  display: inline-block;
+}
+.header-menu li:nth-child(3)::after {
+  content: "|";
+  color: var(--light-color);
+}
+
+.header-menu li a {
+  padding: 15px;
+  font-weight: bold;
 }

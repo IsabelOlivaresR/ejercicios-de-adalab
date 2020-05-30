@@ -1,0 +1,19 @@
+.aside1 {
+  width: 150px;
+  background-color: grey;
+  border-radius: 5px;
+}
+.aside2 {
+  width: 150px;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 840px;
+}
+.main {
+  width: 80%;
+}

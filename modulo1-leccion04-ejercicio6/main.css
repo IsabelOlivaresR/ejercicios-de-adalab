@@ -1,0 +1,26 @@
+* {
+  border: 1px solid red;
+}
+.header {
+  background-color: red;
+}
+
+.aside1 {
+  background-color: yellow;
+  width: 20%;
+}
+.main {
+  background-color: blue;
+  width: 60%;
+}
+.aside2 {
+  background-color: pink;
+  width: 20%;
+}
+.footer {
+  background-color: green;
+}
+
+.center {
+  display: flex;
+}

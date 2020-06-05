@@ -1,0 +1,366 @@
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0px;
+  color: inherit;
+}
+
+.wrapper {
+  max-width: 1200px;
+  min-width: 320px;
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  padding: 0px;
+}
+
+:root {
+  /*COLORS*/
+  --primary-color: #099d8d;
+  --secondary-color: #14d9c4;
+  --light-color: #ffffff;
+  --font-color: #000000;
+  --copyright-color: #b8b8b9;
+  --paragraph-color: #54585a;
+
+  /*FONTS*/
+  --primary-font: "Rubik", sans-serif;
+  --secundary-font: "Open Sans", sans-serif;
+}
+
+/*BODY*/
+
+body {
+  width: 100%;
+}
+
+/*HEADER*/
+
+.header-team {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 0px;
+  margin: 0px;
+  opacity: 0.95;
+}
+
+.header {
+  font-family: var(--primary-font);
+  position: relative;
+  opacity: 0.95;
+}
+.menu {
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+}
+
+.team-name {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  display: flex;
+  height: 65px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-menu {
+  color: var(--light-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 100%;
+  margin: 0px;
+  padding: 15px;
+}
+
+.header-menu a {
+  font-family: var(--primary-font);
+  padding: 0px;
+  color: var(--light-color);
+  display: flex;
+}
+
+.header-menu li {
+  color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*HERO*/
+
+.hero img {
+  width: 100%;
+  margin-top: -130px;
+}
+
+/*CLAIM*/
+.claim {
+  background-color: white;
+  position: relative;
+  transform: translate(0, -50%);
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 15px;
+  height: 80px;
+  width: auto;
+}
+
+.claim p {
+  font-family: var(--secundary-font);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* strengths  y weaknesses */
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+
+p {
+  padding: 0px 15px;
+}
+
+.team-title {
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  text-align: center;
+  font-size: 24px;
+  margin: 0px;
+}
+
+.strengths h3,
+.weaknesses h3 {
+  color: var(--primary-color);
+  text-align: center;
+  font-family: var(--primary-font);
+  padding-top: 30px;
+  margin: 0px;
+}
+
+.team p {
+  color: var(--paragraph-color);
+  text-align: center;
+  font-family: var(--secundary-font);
+}
+
+.container {
+  background-color: rgba(184, 184, 185, 0.2);
+  position: relative;
+}
+
+.littlesquare {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin: 0;
+  transform: translate(50%, -50%) rotate(45deg);
+  right: 50%;
+  background-color: white;
+  flex-direction: column;
+}
+
+/* CHICAS */
+
+.who-we-are {
+  font-family: "Rubik", sans-serif;
+  color: var(--primary-color);
+  font-size: 24px;
+  display: block;
+  text-align: center;
+}
+
+.photos {
+  height: 180px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.photo {
+  border-radius: 4px;
+  width: 180px;
+  align-items: center;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+}
+
+.names {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: var(--font-color);
+  margin: 0px;
+}
+
+.descriptions {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: var(--paragraph-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-media {
+  height: auto;
+  width: 200px;
+  justify-content: space-around;
+  align-self: center;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.logos {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media li:not(:last-child):after {
+  content: " · ";
+  color: var(--primary-color);
+  font-weight: 900;
+  padding: 5px;
+}
+
+.fas,
+.fab {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--paragraph-color);
+}
+
+.logo {
+  height: 45px;
+  width: 115.9px;
+  margin-bottom: 45px;
+}
+
+.imglogo {
+  width: 100%;
+}
+
+.menu-footer li {
+  color: #54585a;
+  font-family: var(--secundary-font);
+  list-style-type: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.menu-footer {
+  margin-bottom: 15px;
+}
+
+.copyright {
+  color: #b8b8b9;
+  font-family: var(--secundary-font);
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+/*MEDIA QUERIES*/
+
+@media all and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    position: none;
+  }
+  .team-name {
+    width: 50%;
+    justify-content: left;
+    padding-left: 45px;
+  }
+
+  .menu {
+    width: 50%;
+    display: inline-block;
+    background-color: var(--primary-color);
+  }
+
+  .header-menu {
+    background-color: var(--primary-color);
+  }
+
+  .claim {
+    opacity: 0.8;
+    max-width: 441px;
+    transform: translate(0, -100%);
+    padding: 0px;
+    border: 1px solid blue;
+  }
+
+  .claim p {
+    text-align: left;
+    transform: translate(0%, 50%);
+  }
+
+  .team-title {
+    color: var(--primary-color);
+    margin-top: -50px;
+  }
+  .container {
+    position: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .strengths,
+  .weaknesses {
+    width: 50%;
+    padding: 25px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .copyright,
+  .logo {
+    margin-left: 45px;
+  }
+
+  .menu-footer {
+    align-self: flex-end;
+    order: 1;
+    margin-top: -125px;
+    margin-right: 45px;
+  }
+}

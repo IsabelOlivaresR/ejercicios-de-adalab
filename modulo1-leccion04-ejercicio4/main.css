@@ -1,0 +1,37 @@
+.container,
+.noticia {
+  border: 1px solid red;
+}
+.container {
+  width: 410px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.noticia {
+  height: 200px;
+  width: 200px;
+}
+
+.noticia1 {
+  order: -1;
+  width: 100%;
+}
+/*.noticia2 {
+  order: 1;
+  flex-grow: 0;
+}
+.noticia3 {
+  order: 1;
+  flex-grow: 0;
+}
+.noticia4 {
+  flex-grow: 0;
+  order: 2;
+}
+.noticia5 {
+  flex-grow: 3;
+  order: 2;
+}*/

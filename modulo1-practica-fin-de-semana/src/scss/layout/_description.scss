@@ -1,0 +1,27 @@
+.description {
+  position: relative;
+  padding: 40px 0;
+}
+h3 {
+  color: $primary-color;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+p {
+  color: $font-color;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 0;
+}
+@media all and (min-width: 768px) {
+  .description {
+    margin: 0 30px;
+  }
+}
+@media all and (min-width: 1280px) {
+  .description {
+    margin: 0 30px;
+  }
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brook</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../scss/core/_reset.scss" />
@@ -21,7 +21,23 @@
     <main>
       <include src="./partials/hero.html"></include>
       <include src="./partials/description.html"></include>
-      <include src="./partials/article.html"></include>
+      <section class="options">
+        <include
+          src="./partials/article.html"
+          imgSrc="../../assets/images/eye-icon.jpg"
+          imgAlt="icono ojo"
+        ></include>
+        <include
+          src="./partials/article.html"
+          imgSrc="../../assets/images/book-icon.jpg"
+          imgAlt="icono libro"
+        ></include>
+        <include
+          src="./partials/article.html"
+          imgSrc="../../assets/images/boxes-icon.jpg"
+          imgAlt="icono cajas"
+        ></include>
+      </section>
     </main>
     <include src="./partials/footer.html"></include>
   </body>

@@ -1,0 +1,10 @@
+.header {
+  background-color: blue;
+  height: 30vh;
+}
+.container-fluid {
+  width: 100%;
+}
+.row {
+  width: 100%;
+}

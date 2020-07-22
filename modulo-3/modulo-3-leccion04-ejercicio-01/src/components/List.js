@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Item from './Item';
 
 const arrayOfItems = [
@@ -23,15 +24,22 @@ const arrayOfItems = [
     category: 'Bebida',
     price: 5,
   },
+  {
+    name: 8,
+    description: 'Agua de un charco del Himalaya',
+    quantity: 2,
+    category: 'Bebida',
+    price: 6,
+  },
 ];
 
 class List extends React.Component {
   render() {
     const arrayOfItemsBelow10 = arrayOfItems.filter((item) => item.price < 10);
 
-    const arrayOfItemsJSX = arrayOfItemsBelow10.map((element) => {
+    const arrayOfItemsJSX = arrayOfItemsBelow10.map((element, index) => {
       return (
-        <li>
+        <li key={index}>
           <Item
             name={element.name}
             description={element.description}
@@ -47,4 +55,11 @@ class List extends React.Component {
   }
 }
 
+Item.defaultProps = {
+  description: 'No hay descripción',
+};
+Item.propTypes = {
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+};
 export default List;

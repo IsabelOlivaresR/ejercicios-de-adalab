@@ -15,7 +15,5 @@ class Item extends React.Component {
     );
   }
 }
-Item.defaultProps = {
-  description: 'No hay descripción',
-};
+
 export default Item;

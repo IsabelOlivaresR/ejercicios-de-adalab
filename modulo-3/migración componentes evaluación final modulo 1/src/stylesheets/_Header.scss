@@ -1,0 +1,27 @@
+//variables
+// fonts
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Roboto Slab', serif;
+
+// colors
+$color-light: #ffffff;
+$color-dark: #000000;
+$color-primary: #304268;
+$color-secondary: #eff9ff;
+$color-tertiary: #f26002;
+$color-paragraph: #4a4a4a;
+$color-menu: #0271bc;
+$color-title: #8ccbea;
+
+.header {
+  background-color: $color-menu;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  position: fixed;
+
+  .toggle {
+    width: auto;
+    padding: 15px 14px 15px 14px;
+  }
+}

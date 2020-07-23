@@ -1,0 +1,80 @@
+// fonts
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Roboto Slab', serif;
+
+// colors
+$color-light: #ffffff;
+$color-dark: #000000;
+$color-primary: #304268;
+$color-secondary: #eff9ff;
+$color-tertiary: #f26002;
+$color-paragraph: #4a4a4a;
+$color-menu: #0271bc;
+$color-title: #8ccbea;
+
+.section1 {
+  padding: 30px 15px 45px 15px;
+  @media all and (min-width: 768px) {
+    padding: 30px 39px 60px 39px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 60px 275px 60px 275px;
+  }
+  .category {
+    font-size: 0.875rem;
+    color: $color-title;
+    @media all and (min-width: 1200px) {
+      font-size: 1rem;
+    }
+  }
+  &__title {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    @media all and (min-width: 768px) {
+      font-size: 1.625rem;
+      line-height: 2.813rem;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 2rem;
+    }
+  }
+  &__info {
+    font-size: 1.125rem;
+    color: $color-paragraph;
+    line-height: 30px;
+    text-align: justify;
+    @media all and (min-width: 768px) {
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+    }
+  }
+  &__buttom {
+    width: 76px;
+    height: 45px;
+    border: 2px solid $color-tertiary;
+    background-color: $color-light;
+    border-radius: 22.5px;
+    margin-top: 30px;
+    transition: background-color ease 0.5s;
+    @media all and (min-width: 768px) {
+      width: 91px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 160px;
+    }
+    a {
+      display: block;
+      color: $color-tertiary;
+      font-size: 1.25rem;
+      line-height: 2.5rem;
+      text-align: center;
+    }
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+}

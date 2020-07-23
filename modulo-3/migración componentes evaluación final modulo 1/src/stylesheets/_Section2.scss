@@ -1,0 +1,104 @@
+//variables
+// fonts
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Roboto Slab', serif;
+
+// colors
+$color-light: #ffffff;
+$color-dark: #000000;
+$color-primary: #304268;
+$color-secondary: #eff9ff;
+$color-tertiary: #f26002;
+$color-paragraph: #4a4a4a;
+$color-menu: #0271bc;
+$color-title: #8ccbea;
+
+.section2 {
+  background-color: $color-secondary;
+  padding: 30px 15px 30px 15px;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  @media all and (min-width: 1200px) {
+    padding: 30px 85px 30px 85px;
+  }
+  &__name {
+    font-family: $font-secondary;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    text-align: center;
+    margin-bottom: 45px;
+    grid-column: span 3;
+    @media all and (min-width: 768px) {
+      font-size: 1.625rem;
+      line-height: 2.813rem;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 2rem;
+    }
+  }
+  .article1,
+  .article2,
+  .article3 {
+    grid-column: span 3;
+    @media all and (min-width: 768px) {
+      grid-column: span 1;
+    }
+  }
+  .article {
+    text-align: center;
+    padding: 0 53px 0 53px;
+    @media all and (min-width: 768px) {
+      padding: 0 17.85px 0 17.85px;
+    }
+
+    &__title {
+      font-family: $font-secondary;
+      font-size: 1.125rem;
+      line-height: 1.875rem;
+      @media all and (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+    &__title::first-letter {
+      text-transform: capitalize;
+    }
+    &__info {
+      font-size: 1.125rem;
+      line-height: 1.875rem;
+      margin-bottom: 45px;
+      @media all and (min-width: 768px) {
+        font-size: 1.25rem;
+        padding: 0;
+      }
+    }
+  }
+
+  &__button {
+    width: 184px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: $color-tertiary;
+    color: $color-light;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 30px;
+    transition: background-color ease 0.5s;
+    @media all and (min-width: 768px) {
+      width: 210px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 255px;
+    }
+    &:hover {
+      background-color: $color-primary;
+    }
+    a {
+      font-size: 1.25rem;
+      line-height: 2.5rem;
+      text-align: center;
+      display: block;
+    }
+  }
+}

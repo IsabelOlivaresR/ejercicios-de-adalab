@@ -25,6 +25,16 @@ class App extends React.Component {
 
   render() {
     console.log(this.state.filterText);
+    const filteredGirls = this.state.searchList.filter((serie) => {
+      if (this.state.filterText !== '') {
+        return serie.show.name
+          .toUpperCase()
+          .includes(this.state.filterText.toUpperCase());
+      } else {
+        return true;
+      }
+    });
+
     return (
       <div>
         {/* <input
@@ -42,7 +52,7 @@ class App extends React.Component {
           buscar
         </button> */}
         <Filter getValueFromSearch={this.getValueFromSearch} />
-        <ShowList list={this.state.searchList} />
+        <ShowList list={filteredGirls} />
       </div>
     );
   }

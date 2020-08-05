@@ -1,19 +1,27 @@
 import React from 'react';
 import ShowList from './ShowList';
 import Filter from './Filter';
-import data from '../data/data.json';
+import getDataFromApi from '../services/data';
+// import data from '../data/data.json';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchList: data,
+      searchList: [],
       filterText: '',
       isChecked: false,
     };
-    // this.getDatafromApi = this.getDatafromApi.bind(this);
+
     this.getValueFromSearch = this.getValueFromSearch.bind(this);
     this.getOnlyRunning = this.getOnlyRunning.bind(this);
+  }
+  componentDidMount(filterText) {
+    getDataFromApi().then((responseData) => {
+      this.setState({
+        searchList: responseData,
+      });
+    });
   }
   getValueFromSearch(ev) {
     console.log(ev);
@@ -23,11 +31,6 @@ class App extends React.Component {
     console.log('holi');
     this.setState({ isChecked: true });
   }
-  // getDatafromApi() {
-  //   fetch('http://api.tvmaze.com/search/shows?q=girls')
-  //     .then((response) => response.json())
-  //     .then((data) => this.setState({ searchList: data }));
-  // }
 
   render() {
     console.log(this.state.isChecked);
